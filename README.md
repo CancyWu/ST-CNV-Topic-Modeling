@@ -14,7 +14,7 @@ The final model learned four overlapping CNV topics from 30,392 Slide-DNA-seq be
 
 The three-group partition was reproducible across independent training runs (mean pairwise ARI = 0.933). The groups were spatially organized and showed distinct mean CNA profiles.
 
-![Final spatial groups and dominant CNV topics](../Step12_sparsity_optimization/output_candidate/selected_l1tv010/K4_spatial_clones_and_topics.png)
+<img width="2420" height="1100" alt="K4_spatial_clones_and_topics" src="https://github.com/user-attachments/assets/364b4909-c35d-45bb-9eab-7ca84737183d" />
 
 ### 2.2 Biological interpretation
 
