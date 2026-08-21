@@ -181,8 +181,6 @@ The spatial ablation compared the true spatial graph with CNV-only/self-only enc
 The Spatial and CNV-only representative partitions remained similar (ARI = 0.867), showing that the main clone signal was already present in the CNV features. However, the true spatial graph substantially improved across-seed partition stability and feature-loading stability. The shuffled graph produced stable but poorly separated groups, demonstrating that arbitrary graph smoothing could not replace genuine spatial adjacency.
 
 <img width="2860" height="1760" alt="ablation_metric_dashboard" src="https://github.com/user-attachments/assets/b29df4b8-5b95-4829-9e25-257096e0b785" />
-<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/7a20d25a-bd0c-4cb8-8c02-e7be90593129" />
-<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/f6f93787-75d1-4896-a430-7a30fe19e683" />
 
 ### 3.4 External validation using matched scWGS
 
@@ -198,9 +196,9 @@ The three spatial groups matched the scWGS references as follows:
 
 The result supports one normal-like spatial group and two tumour-like groups with distinct CNA profiles. The three matched references were projected onto individual beads, producing overall concordance of ARI = 0.589, NMI = 0.597, and AMI = 0.597.
 
-![scWGS profile matching](.<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/31f628c3-e0d5-4cfb-8cd6-17ebb09cc5b1" />)
+<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/31f628c3-e0d5-4cfb-8cd6-17ebb09cc5b1" />
 
-![Spatial model and scWGS projection](../Step15_scWGS_validation/output/spatial_model_vs_scwgs_projection.png)
+<img width="2640" height="1200" alt="spatial_model_vs_scwgs_projection" src="https://github.com/user-attachments/assets/862378ae-2d07-44d9-ad91-8c6868d2a0ed" />
 
 ### 3.5 Confidence and spatial-boundary diagnostics
 
@@ -215,7 +213,8 @@ The moderate whole-section concordance was concentrated in uncertain and boundar
 
 Spatial group 3 was projected as normal for 98.7% of its beads. Spatial groups 1 and 2 matched their expected tumour references for 78.6% and 83.0% of their beads, respectively. These results suggest that the core regions and mean CNA identities are strongly supported, while uncertainty is concentrated near spatial transitions and in beads with similar correlations to multiple references.
 
-![Projection confidence and confusion](../Step15_scWGS_validation/output/projection_confidence_and_confusion.png)
+<img width="2640" height="1032" alt="projection_confidence_and_confusion" src="https://github.com/user-attachments/assets/e0b68fbd-7ee8-4d0f-995c-944120f57dfc" />
+
 
 ### 3.6 Region-level topic interpretation
 
@@ -228,7 +227,7 @@ The dominant patterns included:
 - Topic 3: gain-like chr8:67–111 Mb and chr20 regions;
 - Topic 4: a dominant gain-like chr8:47–146 Mb region and loss-like chr15:48–82 Mb.
 
-![Topic-region loading contributions](../Step16_bin_to_region/output/topic_region_loading_shares.png)
+<img width="3181" height="2347" alt="topic_region_loading_shares" src="https://github.com/user-attachments/assets/5f382957-3aff-4ccc-8834-fc0698810e13" />
 
 The opposite signed chr8 patterns across topics demonstrate that the loading matrix can distinguish gain-like and loss-like genomic programs rather than returning only non-negative feature weights.
 
