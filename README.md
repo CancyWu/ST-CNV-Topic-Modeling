@@ -180,7 +180,9 @@ The spatial ablation compared the true spatial graph with CNV-only/self-only enc
 
 The Spatial and CNV-only representative partitions remained similar (ARI = 0.867), showing that the main clone signal was already present in the CNV features. However, the true spatial graph substantially improved across-seed partition stability and feature-loading stability. The shuffled graph produced stable but poorly separated groups, demonstrating that arbitrary graph smoothing could not replace genuine spatial adjacency.
 
-![Spatial ablation summary](../Step14_spatial_ablation/output/ablation_metric_dashboard.png)
+<img width="2860" height="1760" alt="ablation_metric_dashboard" src="https://github.com/user-attachments/assets/b29df4b8-5b95-4829-9e25-257096e0b785" />
+<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/7a20d25a-bd0c-4cb8-8c02-e7be90593129" />
+<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/f6f93787-75d1-4896-a430-7a30fe19e683" />
 
 ### 3.4 External validation using matched scWGS
 
@@ -196,7 +198,7 @@ The three spatial groups matched the scWGS references as follows:
 
 The result supports one normal-like spatial group and two tumour-like groups with distinct CNA profiles. The three matched references were projected onto individual beads, producing overall concordance of ARI = 0.589, NMI = 0.597, and AMI = 0.597.
 
-![scWGS profile matching](../Step15_scWGS_validation/output/clone_profile_correlation_heatmap.png)
+![scWGS profile matching](.<img width="1760" height="836" alt="clone_profile_correlation_heatmap" src="https://github.com/user-attachments/assets/31f628c3-e0d5-4cfb-8cd6-17ebb09cc5b1" />)
 
 ![Spatial model and scWGS projection](../Step15_scWGS_validation/output/spatial_model_vs_scwgs_projection.png)
 
