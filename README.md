@@ -54,7 +54,7 @@ The topic model is trained without clone labels. K-means is applied only after t
 
 6. **CNV reconstruction.** The model reconstructs the original normalized CNV input as a feature baseline plus the product of bead-topic proportions and topic-feature loadings.
 
-7. **End-to-end optimization.** Reconstruction loss is backpropagated through \(\hat{X}\), \(B\), \(Z\), and the GAT encoder. Thus, the spatial representation and genomic interpretation are learned jointly.
+7. **End-to-end optimization.** Reconstruction loss is backpropagated through \(\widehat{X}\), \(B\), \(Z\), and the GAT encoder. Thus, the spatial representation and genomic interpretation are learned jointly.
 
 8. **Clone-group assignment.** K-means with three groups is applied to final \(Z\) for a discrete spatial partition. The continuous topic proportions remain available for analysing mixed or overlapping topic states.
 
