@@ -208,9 +208,3 @@ At the primary threshold, aggregated regions accounted for 45.5%, 52.8%, 51.2%, 
 - Topic 4: gain-like chr8:47–146 Mb and loss-like chr15:48–82 Mb.
 
 The opposite signed chr8 patterns show that the model captures gain-like and loss-like genomic programs rather than only non-negative feature importance.
-
-## 6. Initial conclusion
-
-The current model provides an end-to-end spatial topic representation of normalized Slide-DNA-seq coverage. It identifies three stable spatial groups, connects topics to signed genomic regions, and receives independent support from matched scWGS. The main CNA identities are present in the CNV data, while genuine spatial information improves reproducibility and feature stability. External agreement is strongest in high-confidence interior regions, with uncertainty concentrated at spatial boundaries.
-
-These results support the feasibility of interpretable spatial clone analysis, although neither the inferred spatial groups nor the scWGS references should be treated as absolute ground truth.
