@@ -98,23 +98,23 @@ The encoder used a 128-dimensional hidden layer followed by a 16-dimensional lat
 
 The final model used four CNV topics. Topic proportions for each bead were obtained by applying a softmax function to the GAT output:
 
-\[
+$$
 Z = \operatorname{softmax}(X_{\mathrm{GAT}}),
-\]
+$$
 
-where \(Z\) has dimensions `spatial unit × topic` and each row sums to one.
+where \(Z\) has dimensions spatial unit × topic and each row sums to one.
 
 To make the topics interpretable, a signed topic-feature loading matrix \(B\) was learned:
 
-\[
+$$
 B \in \mathbb{R}^{K \times P},
-\]
+$$
 
 where \(K=4\) topics and \(P=2{,}704\) genomic bins. Positive and negative loadings represent gain-like and loss-like contributions, respectively. The normalized CNV input was reconstructed as
 
-\[
-\hat{X}=\mu + ZB,
-\]
+$$
+\hat{X} = \mu + ZB,
+$$
 
 where \(\mu\) is the fixed feature-wise baseline.
 
